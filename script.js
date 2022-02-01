@@ -25,7 +25,7 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years); //converting years to integer and then adding the with current year
     var amount = principal * year * rate /100; // calculating the total amount
         //  now printing the result in the span element with id = result
-    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>";
+    document.getElementById("result").innerHTML="If you deposit <span style='background:yellow'>"+principal+"</span>,\<br\>at an interest rate of <span style='background:yellow'>"+rate+"%</span>\<br\>You will receive an amount of <span style='background:yellow'>"+amount+"</span>,\<br\>in the year <span style='background:yellow'>"+year+"</span>\<br\>";
 
     
 }
